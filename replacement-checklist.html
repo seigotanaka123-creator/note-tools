@@ -199,6 +199,8 @@
       line-height: 1.35;
     }
 
+    .note-cta { margin:18px 0; padding:16px; border:1px solid #eadcc4; border-radius:8px; background:#fffaf1; }
+    .note-cta strong { display:block; margin-bottom:8px; }
     .result p {
       margin: 0 0 14px;
       color: var(--muted);
@@ -356,8 +358,9 @@
         <div id="resultAction"></div>
       </div>
     </div>
+    <div class="note-cta"><strong>この結果に近い人へ</strong><p id="resultReading"></p></div>
     <div class="actions">
-      <a id="resultLink" class="action" href="https://note.com/cheeky_guppy1145/n/n7e706c86f2d1">買い替え判断の記事を見る</a>
+      <a id="resultLink" class="action" href="https://note.com/cheeky_guppy1145/n/n7e706c86f2d1">関連noteで詳しく読む</a>
       <a class="action secondary" href="spending-type-diagnosis.html">無駄な出費タイプ診断も見る</a>
     </div>
     <p class="small-note">このチェックリストは、買い物の判断を整理するためのものです。高額な契約や専門的な判断が必要なものは、必要に応じて専門家にも確認してください。</p>
@@ -394,6 +397,7 @@
   const resultPoint = document.getElementById('resultPoint');
   const resultAction = document.getElementById('resultAction');
   const resultLink = document.getElementById('resultLink');
+  const resultReading = document.getElementById('resultReading');
 
   function selectedScore() {
     return checks.reduce((sum, input) => sum + (input.checked ? Number(input.value) : 0), 0);
