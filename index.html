@@ -88,6 +88,65 @@
       text-decoration: none;
       font-weight: 600;
     }
+
+    .tools-section {
+      max-width: 980px;
+      margin: 28px auto 10px;
+      padding: 0 22px;
+    }
+
+    .tools-section h2 {
+      margin: 0 0 10px;
+      font-size: clamp(20px, 4vw, 28px);
+      font-weight: 600;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .tools-section > p {
+      max-width: 720px;
+      margin: 0 auto 18px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    .tool-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .tool-card {
+      display: block;
+      min-height: 100%;
+      padding: 16px;
+      border: 1px solid #e2ddd5;
+      border-radius: 8px;
+      background: #fff;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .tool-card:hover {
+      border-color: #2f6f73;
+      background: #f4faf9;
+    }
+
+    .tool-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #2f6f73;
+      font-size: 16px;
+    }
+
+    .tool-card span {
+      display: block;
+      color: #666;
+      font-size: 13px;
+      line-height: 1.8;
+    }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -148,11 +207,24 @@
 </div>
 
 
-<div class="tool-link">
-  <a href="note-image-diagnosis.html">note見出し画像タイプ診断をする</a>
-  <a href="spending-type-diagnosis.html">無駄な出費タイプ診断をする</a>
-  <a href="replacement-checklist.html">買い替え判断チェックリストを使う</a>
-</div>
+<section class="tools-section" aria-labelledby="tools-heading">
+  <h2 id="tools-heading">記事づくりと買い物判断に使える無料ツール</h2>
+  <p>noteの見出し画像選び、無駄な出費の見直し、買い替え判断を短い質問で整理できます。目的に近いツールから使ってみてください。</p>
+  <div class="tool-cards">
+    <a class="tool-card" href="note-image-diagnosis.html">
+      <strong>note見出し画像タイプ診断</strong>
+      <span>記事の雰囲気に合うシンプルな見出し画像タイプを確認できます。画像選びに迷ったときに使えます。</span>
+    </a>
+    <a class="tool-card" href="spending-type-diagnosis.html">
+      <strong>無駄な出費タイプ診断</strong>
+      <span>買い物や買い替えで出費が増えやすい判断のクセを見直せます。買う前の整理に向いています。</span>
+    </a>
+    <a class="tool-card" href="replacement-checklist.html">
+      <strong>買い替え判断チェックリスト</strong>
+      <span>まだ使えるものを買い替えるべきか、保留するか、使い方を見直すかをチェックできます。</span>
+    </a>
+  </div>
+</section>
 <div class="gallery">
   <div class="card">
     <img src="images/soft-light-minimal.png" alt="やさしい光のミニマル画像">
