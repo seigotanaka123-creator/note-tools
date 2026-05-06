@@ -229,6 +229,31 @@
         width: 100%;
       }
     }
+      .seo-section {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+    .seo-section h2 {
+      margin: 0 0 12px;
+      font-size: clamp(20px, 4vw, 28px);
+      line-height: 1.45;
+    }
+    .seo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .seo-box {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .seo-box h3 { margin: 0 0 8px; font-size: 17px; }
+    .seo-box p, .seo-box ul { margin: 0; color: var(--muted); }
+    .seo-box ul { padding-left: 20px; }
   </style>
 </head>
 <body>
@@ -277,7 +302,24 @@
     </div>
     <p class="small-note">この診断は、買い物や買い替えで迷ったときの考え方を整理するためのものです。</p>
   </section>
-</main>
+  <section class="seo-section" aria-labelledby="about-tool">
+    <h2 id="about-tool">この診断で分かること</h2>
+    <p>買い物や買い替えで出費が増えやすい判断のクセを、質問に答えながら確認できます。安さにつられる、比較しすぎる、まだ使えるから先延ばしにするなど、自分の傾向を見直すきっかけになります。</p>
+    <div class="seo-grid">
+      <div class="seo-box">
+        <h3>こんな人におすすめ</h3>
+        <ul>
+          <li>無駄な出費を減らしたい人</li>
+          <li>買い物の後悔を減らしたい人</li>
+          <li>買う前に判断を整理したい人</li>
+        </ul>
+      </div>
+      <div class="seo-box">
+        <h3>使い方</h3>
+        <p>普段の買い物に近い選択肢を選ぶと、出費が増えやすい場面と最初に試したい対策が表示されます。大きな買い物の前の確認にも使えます。</p>
+      </div>
+    </div>
+  </section></main>
 
 <script>
     const links = {

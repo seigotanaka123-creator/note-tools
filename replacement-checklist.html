@@ -241,6 +241,31 @@
         width: 100%;
       }
     }
+      .seo-section {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+    .seo-section h2 {
+      margin: 0 0 12px;
+      font-size: clamp(20px, 4vw, 28px);
+      line-height: 1.45;
+    }
+    .seo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .seo-box {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+    .seo-box h3 { margin: 0 0 8px; font-size: 17px; }
+    .seo-box p, .seo-box ul { margin: 0; color: var(--muted); }
+    .seo-box ul { padding-left: 20px; }
   </style>
 </head>
 <body>
@@ -329,7 +354,24 @@
     </div>
     <p class="small-note">このチェックリストは、買い物の判断を整理するためのものです。高額な契約や専門的な判断が必要なものは、必要に応じて専門家にも確認してください。</p>
   </section>
-</main>
+  <section class="seo-section" aria-labelledby="about-tool">
+    <h2 id="about-tool">このチェックリストで分かること</h2>
+    <p>まだ使えるものを買い替えるべきか、もう少し様子を見るべきか、使い方や置き場所を見直すべきかを整理できます。価格だけでなく、日々の不便さや時間のロスも含めて判断しやすくなります。</p>
+    <div class="seo-grid">
+      <div class="seo-box">
+        <h3>こんな人におすすめ</h3>
+        <ul>
+          <li>買い替えのタイミングに迷っている人</li>
+          <li>まだ使えるものを買うべきか悩む人</li>
+          <li>家電や日用品の出費を整理したい人</li>
+        </ul>
+      </div>
+      <div class="seo-box">
+        <h3>使い方</h3>
+        <p>買い替えを考えているものを思い浮かべながら、当てはまる項目にチェックしてください。結果を見て、購入・保留・使い方の見直しを判断できます。</p>
+      </div>
+    </div>
+  </section></main>
 
 <script>
   const articleUrl = "https://note.com/cheeky_guppy1145/n/n7e706c86f2d1";
