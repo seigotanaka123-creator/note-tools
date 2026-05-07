@@ -88,6 +88,47 @@
     .seo-box h3 { margin: 0 0 8px; font-size: 17px; }
     .seo-box p, .seo-box ul { margin: 0; color: var(--muted); }
     .seo-box ul { padding-left: 20px; }
+      .related-tools {
+      margin-top: 34px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line, #e6e2dc);
+    }
+    .related-tools h2 {
+      margin: 0 0 12px;
+      font-size: clamp(20px, 4vw, 28px);
+      line-height: 1.45;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .related-card {
+      display: block;
+      padding: 16px;
+      border: 1px solid var(--line, #e6e2dc);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--text, #222);
+      text-decoration: none;
+    }
+    .related-card:hover {
+      border-color: var(--accent, #2f6f73);
+      background: var(--soft, #f8f6f1);
+    }
+    .related-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--accent, #2f6f73);
+      font-size: 16px;
+    }
+    .related-card span {
+      display: block;
+      color: var(--muted, #666);
+      font-size: 13px;
+      line-height: 1.8;
+    }
   </style>
 </head>
 <body>
